@@ -22,7 +22,7 @@ function hanoiTower(n, source, auxiliary, target) {
     // Here is your HW !\
     // Hint : Check the concept of recursive
     // 1. Move n-1 disks from the source pole to the auxiliary pole using the target pole as a temporary pole
-    hanoiTower(n-1,source = source,auxiliary = target,target = auxiliary);
+    hanoiTower(n-1,source,target,auxiliary);
     // 2. Move the remaining disk from the source pole to the target pole
     hanoiTower(1, source, auxiliary, target);
     // 3. Move n-1 disks from the auxiliary pole to the target pole using the source pole as a temporary pole
